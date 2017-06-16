@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EstacionarMe</string>
+    <string name="office">Gobierno de Morón</string>
+    <string name="office_tag">Corazón del Oeste</string>
+    <string name="placeholder.username">Usuario</string>
+    <string name="placeholder.password">Contraseña</string>
+    <string name="createUser">Crear Usuario</string>
+</resources>
