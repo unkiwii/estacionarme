@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gov.moron.estacionarme.CreatorOffice">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/creatorOfficeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="24dp"
+                android:textSize="30sp"
+                android:elevation="0dp"
+                android:clickable="false"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/creatorOffice" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/creatorOfficeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:elevation="0dp"
+            android:clickable="false"
+            android:enabled="false"
+            android:inputType="textMultiLine"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/creatorOfficeInfo" />
+
+        <TextView
+            android:id="@+id/creatorOfficeWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:elevation="0dp"
+            android:clickable="true"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/creatorOfficeWeb" />
+
+    </LinearLayout>
+
+</FrameLayout>

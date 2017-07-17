@@ -2,11 +2,15 @@ package gov.moron.estacionarme;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnFragmentInteractionListener {
+
+    private Fragment currentFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,5 +30,60 @@ public class MainActivity extends Activity {
         // logo
         actionBar.setIcon(R.mipmap.ic_launcher);
         actionBar.setDisplayShowHomeEnabled(true);
+
+        show(Login.newInstance());
+    }
+
+    @Override
+    public void onFragmentInteraction(int buttonId) {
+        switch (buttonId) {
+            case R.id.login:
+                show(MainMenu.newInstance());
+                break;
+            case R.id.createUser:
+                show(CreateUser.newInstance());
+                break;
+            case R.id.acceptCreateUser:
+                show(Login.newInstance());
+                break;
+            case R.id.selectParking:
+                show(Parking.newInstance());
+                break;
+            case R.id.seeCredits:
+                //show(About.newInstance());
+                break;
+            case R.id.updateUserData:
+                show(CreateUser.newInstance()); // change user data in the future
+                break;
+            case R.id.privateParking:
+                show(Map.newInstance(R.string.private_parking));
+                break;
+            case R.id.publicParking:
+                show(Map.newInstance(R.string.public_parking));
+                break;
+            case R.id.map:
+                show(Navigation.newInstance());
+                break;
+            case R.id.aboutUs:
+                show(About.newInstance());
+                break;
+        }
+    }
+
+    private void show(Fragment newFragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
+
+        if (newFragment != null) {
+            if (currentFragment != null) {
+                transaction.replace(R.id.fragmentsLayout, newFragment);
+                transaction.addToBackStack(null);
+            } else {
+                transaction.add(R.id.fragmentsLayout, newFragment);
+            }
+            currentFragment = newFragment;
+        }
+
+        transaction.commit();
     }
 }

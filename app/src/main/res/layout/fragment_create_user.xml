@@ -1,0 +1,333 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context="gov.moron.estacionarme.CreateUser">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- User Data -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/userDataTitle"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/user_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.user.firstname"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/user_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.user.lastname"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.user.id"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.user.phone"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/user_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.user.street"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/user_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.user.place"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.username"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.password"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/repeat_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.repeat_password"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPassword" />
+
+            <!-- Vehicle Data -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/userVehicleTitle"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="32dp"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/vehicle_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.vehicle.brand"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/vehicle_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.vehicle.model"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/vehicle_plate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.vehicle.plate"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/vehicle_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.vehicle.color"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/vehicle_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.vehicle.state"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/vehicle_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.vehicle.details"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <!-- Vehicle Assurance Data -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicleAssuranceTitle"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="32dp"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/assurance_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.assurance.company"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/assurance_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.assurance.plan"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/assurance_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.assurance.id"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <!-- User Data -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ccTitle"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="32dp"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/cc_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.cc.number"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/cc_expire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.cc.expire"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/cc_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/placeholder.cc.sec"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/acceptCreateUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="24dp"
+                    android:textSize="20sp"
+                    android:elevation="0dp"
+                    android:clickable="true"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="monospace"
+                    android:text="@string/accept" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
