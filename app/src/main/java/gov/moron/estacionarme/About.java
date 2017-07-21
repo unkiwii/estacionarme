@@ -20,14 +20,6 @@ public class About extends MyFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_about, container, false);
 
-        TextView creator = view.findViewById(R.id.creator);
-        creator.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onButtonPressed(R.id.creator);
-            }
-        });
-
         TextView creatorOffice = view.findViewById(R.id.creatorOffice);
         creatorOffice.setOnClickListener(new View.OnClickListener() {
             @Override

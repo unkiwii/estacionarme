@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="gov.moron.estacionarme.CreatorOffice">
+    tools:context="gov.moron.estacionarme.Credits">
 
     <LinearLayout
         android:orientation="vertical"
@@ -14,7 +14,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/creatorOfficeTitle"
+                android:id="@+id/creditsTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -24,25 +24,12 @@
                 android:clickable="false"
                 android:fontFamily="monospace"
                 android:textColor="@color/colorPrimary"
-                android:text="@string/creator_office" />
+                android:text="@string/credits_title" />
 
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/creatorOfficeInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="24dp"
-            android:elevation="0dp"
-            android:clickable="false"
-            android:enabled="false"
-            android:fontFamily="monospace"
-            android:textSize="18sp"
-            android:textColor="@color/colorPrimary"
-            android:text="@string/creator_office_info" />
-
-        <TextView
-            android:id="@+id/creatorOfficeWeb"
+            android:id="@+id/buyCredits"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="24dp"
@@ -50,7 +37,18 @@
             android:clickable="true"
             android:fontFamily="monospace"
             android:textColor="@color/colorPrimary"
-            android:text="@string/creator_office_web" />
+            android:text="@string/buy_credits" />
+
+        <TextView
+            android:id="@+id/showCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:elevation="0dp"
+            android:clickable="true"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/show_credits" />
 
     </LinearLayout>
 

@@ -50,7 +50,7 @@ public class MainActivity extends Activity implements OnFragmentInteractionListe
                 show(Parking.newInstance());
                 break;
             case R.id.seeCredits:
-                //show(About.newInstance());
+                show(Credits.newInstance());
                 break;
             case R.id.updateUserData:
                 show(CreateUser.newInstance()); // change user data in the future
@@ -67,12 +67,14 @@ public class MainActivity extends Activity implements OnFragmentInteractionListe
             case R.id.aboutUs:
                 show(About.newInstance());
                 break;
+            case R.id.creatorOffice:
+                show(CreatorOffice.newInstance());
+                break;
         }
     }
 
     private void show(Fragment newFragment) {
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
 
         if (newFragment != null) {
             if (currentFragment != null) {

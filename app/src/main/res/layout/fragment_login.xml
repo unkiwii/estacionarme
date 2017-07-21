@@ -69,7 +69,7 @@
             android:clickable="true"
             android:fontFamily="monospace"
             android:textColor="@color/colorPrimary"
-            android:text="@string/aboutUs" />
+            android:text="@string/about_us" />
 
     </RelativeLayout>
 

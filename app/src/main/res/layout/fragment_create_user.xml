@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/userDataTitle"
+                android:text="@string/user_data_title"
                 android:textAlignment="center"
                 android:fontFamily="monospace"
                 android:textColor="@color/colorPrimary"
@@ -134,7 +134,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/userVehicleTitle"
+                android:text="@string/user_vehicle_title"
                 android:fontFamily="monospace"
                 android:textColor="@color/colorPrimary"
                 android:layout_marginTop="32dp"
@@ -217,7 +217,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/vehicleAssuranceTitle"
+                android:text="@string/vehicle_assurance_title"
                 android:fontFamily="monospace"
                 android:textColor="@color/colorPrimary"
                 android:layout_marginTop="32dp"
@@ -264,7 +264,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/ccTitle"
+                android:text="@string/cc_title"
                 android:fontFamily="monospace"
                 android:textColor="@color/colorPrimary"
                 android:layout_marginTop="32dp"

@@ -29,15 +29,16 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/creator"
+            android:id="@+id/aboutUsInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="24dp"
             android:elevation="0dp"
             android:clickable="false"
+            android:enabled="false"
             android:fontFamily="monospace"
             android:textColor="@color/colorPrimary"
-            android:text="@string/creator" />
+            android:text="@string/about_us_info" />
 
         <TextView
             android:id="@+id/creatorOffice"
@@ -48,7 +49,7 @@
             android:clickable="true"
             android:fontFamily="monospace"
             android:textColor="@color/colorPrimary"
-            android:text="@string/creatorOffice" />
+            android:text="@string/creator_office" />
 
     </LinearLayout>
 
