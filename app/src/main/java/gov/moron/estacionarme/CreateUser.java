@@ -20,7 +20,7 @@ public class CreateUser extends MyFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_create_user, container, false);
 
-        TextView acceptCreateUser = view.findViewById(R.id.acceptCreateUser);
+        TextView acceptCreateUser = (TextView) view.findViewById(R.id.acceptCreateUser);
         acceptCreateUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

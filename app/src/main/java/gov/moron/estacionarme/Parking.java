@@ -20,7 +20,7 @@ public class Parking extends MyFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_parking, container, false);
 
-        TextView privateParking = view.findViewById(R.id.privateParking);
+        TextView privateParking = (TextView) view.findViewById(R.id.privateParking);
         privateParking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,7 +28,7 @@ public class Parking extends MyFragment {
             }
         });
 
-        TextView publicParking = view.findViewById(R.id.publicParking);
+        TextView publicParking = (TextView) view.findViewById(R.id.publicParking);
         publicParking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

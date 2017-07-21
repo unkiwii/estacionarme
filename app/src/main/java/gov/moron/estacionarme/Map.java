@@ -38,7 +38,7 @@ public class Map extends MyFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_map, container, false);
 
-        TextView message = view.findViewById(R.id.message);
+        TextView message = (TextView) view.findViewById(R.id.message);
         message.setText(messageId);
 
         view.findViewById(R.id.map).setOnClickListener(new View.OnClickListener() {

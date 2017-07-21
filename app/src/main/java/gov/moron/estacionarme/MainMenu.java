@@ -20,7 +20,7 @@ public class MainMenu extends MyFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main_menu, container, false);
 
-        TextView selectParking = view.findViewById(R.id.selectParking);
+        TextView selectParking = (TextView) view.findViewById(R.id.selectParking);
         selectParking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,7 +28,7 @@ public class MainMenu extends MyFragment {
             }
         });
 
-        TextView seeCredits = view.findViewById(R.id.seeCredits);
+        TextView seeCredits = (TextView) view.findViewById(R.id.seeCredits);
         seeCredits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +36,7 @@ public class MainMenu extends MyFragment {
             }
         });
 
-        TextView updateUserData = view.findViewById(R.id.updateUserData);
+        TextView updateUserData = (TextView) view.findViewById(R.id.updateUserData);
         updateUserData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

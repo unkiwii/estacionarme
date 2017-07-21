@@ -36,7 +36,7 @@ public class Credits extends MyFragment {
         View view = inflater.inflate(R.layout.fragment_credits, container, false);
         final Resources resources = getResources();
 
-        TextView buy = view.findViewById(R.id.buyCredits);
+        TextView buy = (TextView) view.findViewById(R.id.buyCredits);
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,7 +56,7 @@ public class Credits extends MyFragment {
             }
         });
 
-        TextView show = view.findViewById(R.id.showCredits);
+        TextView show = (TextView) view.findViewById(R.id.showCredits);
         show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

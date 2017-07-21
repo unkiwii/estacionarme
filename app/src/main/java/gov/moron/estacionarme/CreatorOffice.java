@@ -22,7 +22,7 @@ public class CreatorOffice extends MyFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_creator_office, container, false);
 
-        TextView web = view.findViewById(R.id.creatorOfficeWeb);
+        TextView web = (TextView) view.findViewById(R.id.creatorOfficeWeb);
         web.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

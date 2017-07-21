@@ -20,7 +20,7 @@ public class Login extends MyFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
 
-        TextView loginButton = view.findViewById(R.id.login);
+        TextView loginButton = (TextView) view.findViewById(R.id.login);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,7 +28,7 @@ public class Login extends MyFragment {
             }
         });
 
-        TextView createUserButton = view.findViewById(R.id.createUser);
+        TextView createUserButton = (TextView) view.findViewById(R.id.createUser);
         createUserButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +36,7 @@ public class Login extends MyFragment {
             }
         });
 
-        TextView aboutUsButton = view.findViewById(R.id.aboutUs);
+        TextView aboutUsButton = (TextView) view.findViewById(R.id.aboutUs);
         aboutUsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
